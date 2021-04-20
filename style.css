@@ -7,7 +7,7 @@
     
 }
 header{
-    background: linear-gradient(rgba(252, 75, 75, 0.5), rgba(0, 0, 0, 0)), url(New\ York\ Street.jpeg);
+    background: linear-gradient(rgba(252, 75, 75, 0.5), rgba(0, 0, 0, 0)), url(new-york-street.jpeg);
     background-size: cover;
     height: 50vmin;
 }
@@ -170,26 +170,14 @@ button{
     
 }
 
-
-
-
-
 #name::placeholder, #email::placeholder, #message::placeholder{
     color: white;
 }
 
 
-
-
-
-
-
-
-
-
 #submit{
     display: block;
-    width: ;
+    float: left;
     margin-top: 10px;
     margin-left: 900px;
     margin-right: auto;
