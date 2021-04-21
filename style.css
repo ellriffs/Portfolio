@@ -1,199 +1,197 @@
 *{
-    margin: 0;
-    --mainfont: 'Great Vibes';
-    --secondaryfont: 'Cinzel Decorative';
-    --maincolour: white;
-    --secondarycolour: #FE4A49;
-    
-}
-header{
-    background: linear-gradient(rgba(252, 75, 75, 0.5), rgba(0, 0, 0, 0)), url(new-york-street.jpeg);
-    background-size: cover;
-    height: 50vmin;
+    margin:auto;
+    max-width: 70vw;
+    padding:10px;
+    --maincolour:rgba(245, 243, 244, 0.03);
+    --secondarycolor:rgba(164, 22, 26, 0.8);
+    --backgroundcolor:#161A1D;
+    --firstfontcolor:#D3D3D3;
+    --titlefont:'Great Vibes';
+    --bodyfont:'Syncopate'
 }
 
-
-body{
-    background-color:gainsboro;
-    
-}
-
-
-.text {
+header h1{
     display: flex;
-    flex-wrap:wrap;
-    flex-direction:column;
-    text-align: center;
-    justify-content: space-around;
-    padding: 10rem;
-    height: fill;
-    width: 700px;
-    margin: auto;
-    border-bottom: 5px double rgba(0, 0, 0, 0.5);
-    border-width: medium;
-    font-weight: lighter;
-    font-size: 28px;
-    line-height: 3rem;
-    
+    font-size: 6rem;
+    width: 90%;
+    justify-content: center;
+    font-family: var(--titlefont);
+    transform: rotate(-5deg);
+    text-shadow: 10px 4px 7px var(--maincolour);
+    text-shadow: 4px 4px 10px var(--secondarycolor);
 }
-
 
 h1{
-    font-family: var(--mainfont);
-    color: white;
-    display: flex;
-    height: 50vh;
-    font-size: 10rem;
+    color: var(--firstfontcolor);
+}
+
+.nav{
     justify-content: center;
-    align-items: center;
-    text-shadow: 10px 10px 4px black;
-}
-
-h3{
-position: relative;
-    text-align: center;
-    font-size: 4rem;
-    font-family: var(--mainfont);
-    color: white;
-    text-shadow: 10px 10px 4px black;
-    bottom: 8rem;
-}
-
-
-.me{
+    top: 1rem;
     position: relative;
-    display:flex;
-    margin: auto;
-    border-radius: 100%;
-    height: 550px;
-    width: 550px;
-    left: auto;
-    right: auto;
-    top: 120px;
-    border: 1px solid black; 
-    box-shadow: 20px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-
-
-nav{
-    position: relative;
-    bottom: 81px;
-    display:flex;
-    height:70px;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 30px;
-    border-bottom: 3px solid black;
-    border-top: 3px solid black;   
-}
-
-
-nav a{
-    
     display: flex;
-    text-decoration: none;
-    color: #FE4A49;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    background-color: var(--maincolour);
+    font-size: 20px;
+    
     
 }
 
-nav :hover {
-    opacity: 0.6;
+nav a {
+    color: var(--firstfontcolor);
+}
+
+nav :hover{
+    opacity: 0.5;
+}
+
+body{
+    background-color:var(--backgroundcolor)
+}
+
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid white;
+    background-color:var(--maincolour);
+    line-height:2rem;
+    color: var(--firstfontcolor) ;
+    font-family: var(--bodyfont);
+    text-align: center;
     
 }
 
-h2{
-    font-family: var(--secondaryfont);
-    font-size: 50px;
-    text-decoration: underline;
-    text-align: center;
+.intro img{
+    display: flex;
+    position: relative;
+    height: 40vh;
+    flex-wrap: wrap;
+    border-radius: 100%;
+}
+.intro img:hover{
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
-nav p{
-    font-size: 25px;
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.hobbies{
+    background-color:var(--secondarycolor) ;
+    line-height: 2rem;
+    color:var(--firstfontcolor);
+    font-family: var(--bodyfont);
     text-align: center;
-    color:rgba(0,0, 0, 0.)
+    border: 2px solid white;
+    
 }
 
 .skills{
-    font-size: 25px;
+    position: relative;
+    background-color: var(--maincolour);
+    line-height: 2rem;
+    color: var(--firstfontcolor);
+    font-family: var(--bodyfont);
     text-align: center;
+    border: 2px solid white;
+}
+
+.skills li{
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.li1 i{
+    color: rgb(240, 101, 41, 0.8);
+    text-decoration: underline;
+    text-shadow: 4px 0.1px 1px orange;
+}
+
+.li2 i{
+    color: skyblue;
+    text-decoration: underline;
+    text-shadow: 4px 0.1px 1px blue;
+}
+
+
+h4{
+    text-align: center;
+    font-family:var(--titlefont);
+    font-size: 3rem;
+    color: white;
+    transform: rotate(-5deg);
+    text-shadow: 4px 4px 10px var(--secondarycolor);
+
+}
+
+form{
+    height: 50vh;
+    font-size: 3rem;
+    
     
 }
 
-li{
-    text-align: center;
-    font-size: 25px;
-}
-
-.HaI{
-    font-family: var(--secondaryfont);
-    color: black;
-    text-decoration: underline;
-    top: 0px;
-    font-size: 3rem;
-}
-
-footer{
-    height: 30vh;
-}
-
-#name, #email, #message {
+#name, #email, #message{
     display: flex;
-    background-color: rgba(252, 75, 75, 0.5);
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70vh;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    font-size: 16px;
     color: white;
-    text-align: left;
-    font-family: var(--secondaryfont);
-    font-size: medium;
-    margin: auto;
-    margin-top: 10px;
-    width: 40%;
-}
-
-#message{
-    height: 100px;
+    font-family: var(--bodyfont);
+    
 }
 
 button{
-    position: relative;
-    right: 185px;
-    height: 40px;
-    width: 80px;
-    background-color: rgba(255,255,255, 0.6);
-    border-top: none;
-    border-left: none;
-    border-right: 4px solid white;
-    border-bottom: 4px solid white;
-    font-family: var(--secondaryfont);
-    font-weight: bold;
-    
-}
-
-#name::placeholder, #email::placeholder, #message::placeholder{
-    color: white;
-}
-
-
-#submit{
-    display: block;
-    float: left;
-    margin-top: 10px;
-    margin-left: 900px;
-    margin-right: auto;
-
-}
-
-h4{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size: 2rem;
-    text-decoration: underline;
-    font-family: var(--mainfont);
+    position: relative;
+    background-color: transparent;
+    border: 5px groove var(--secondarycolor);
+    color: white;
+    height: 3rem;
+    width: 5rem;
+    align-content: center;
+    justify-content: center;
+}
+
+button:hover{
+    opacity: 0.5;}
+
+
+#message{
+    height: 4rem;
 }
 
 
-@media screen and (max-height: )
+@media (max-width:870px){
+    #name, #email, #message{
+        width: 50vw;
+    }
+}
 
+@media all and (max-width:550px){
+.nav{
+    display: block;
+    text-align: center;
+}
+
+.intro img{
+    height: 20vh;
+}
+
+}
+
+@media (max-width:370px){
+    header h1{
+        font-size: 2rem;
+    }
+}
 
