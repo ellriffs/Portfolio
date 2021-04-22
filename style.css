@@ -130,7 +130,7 @@ h4{
 }
 
 form{
-    height: 50vh;
+    height: 55vh;
     font-size: 3rem;
     
     
@@ -151,16 +151,21 @@ form{
 }
 
 button{
-    display: flex;
-    position: relative;
     background-color: transparent;
     border: 5px groove var(--secondarycolor);
     color: white;
     height: 3rem;
     width: 5rem;
-    align-content: center;
-    justify-content: center;
+    margin: 5%;
 }
+
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+}
+
 
 button:hover{
     opacity: 0.5;}
