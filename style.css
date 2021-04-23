@@ -26,6 +26,7 @@ h1{
 }
 
 .nav{
+    
     justify-content: center;
     top: 1rem;
     position: relative;
@@ -36,6 +37,18 @@ h1{
     font-size: 20px;
     
     
+}
+
+.nav-2{
+    bottom: 44rem;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    background-color: var(--maincolour);
+    font-size: 20px;
+    font-weight:normal;;
 }
 
 nav a {
@@ -122,24 +135,133 @@ body{
 h4{
     text-align: center;
     font-family:var(--titlefont);
-    font-size: 3rem;
+    font-size: 6rem;
     color: white;
     transform: rotate(-5deg);
     text-shadow: 4px 4px 10px var(--secondarycolor);
-
 }
 
+.footer{
+    display: flex;
+    background-color: var(--maincolour);
+    border: 2px double white;
+    height: 40vh;
+    flex-wrap: wrap;
+}
+
+.worktogether{
+    position: relative;
+    bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family:var(--titlefont);
+    font-size: 6rem;
+    color: white;
+    transform: rotate(0deg);
+    text-shadow: 4px 4px 10px var(--secondarycolor);
+}
+
+.contact{
+    position:relative;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    flex: 2;
+    bottom: 2rem;
+    width: 40rem;
+    font-family: var(--bodyfont);
+    display: inline-block;
+    text-align: center;
+}
+
+.contact:hover{
+    opacity: 0.3;
+}
+
+.fa-paper-plane{
+    margin:0;
+    
+
+}
+/* contact page  */
+
+
+.guitars{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem;
+    grid-template-rows: 10rem 10rem;
+    overflow: hidden;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    height: 20.5rem;
+    width:31rem;
+    padding:0%;
+    border: 3px double white;
+    box-shadow: 4px 6px 4px var(--secondarycolor);
+}
+
+.guitars:hover{
+    opacity:0.3;
+}
+
+.col1{
+    grid-row: 2;
+    grid-column: 3;
+    padding: 0;
+    margin: 0;
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+}
+
+
+.col2{
+    grid-area: 1/2;
+    margin: 0%;
+    padding: 0%;
+    width: 10rem;
+    height: 22rem;
+    object-fit: cover;
+}
+
+.col3{
+    grid-column: 3;
+    margin: 0;
+    padding: 0;
+    width: 10rem;
+    object-fit: fill;
+    height: 10rem;
+}
+    
+.col4{
+    width: 10rem;
+    grid-row: 1;
+    padding: 0;
+    object-fit: cover;
+}
+.col5{
+    grid-column: 1;
+    grid-row: 2;
+    width: 10rem;
+    padding: 0
+}
 form{
+    position: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0%;
     height: 55vh;
     font-size: 3rem;
-    
-    
+    height: 50vh;
+    width: 100vw;
 }
 
 #name, #email, #message{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     width: 70vh;
     background-color: transparent;
     border-bottom: 2px solid white;
@@ -147,7 +269,6 @@ form{
     font-size: 16px;
     color: white;
     font-family: var(--bodyfont);
-    
 }
 
 button{
@@ -176,9 +297,30 @@ button:hover{
 }
 
 
+/* responsive settings */
+
+@media (max-width:1022px){
+    .contact{
+        width: 50vw;
+    }
+}
+
+@media (max-width: 915px){
+    .worktogether{
+        font-size: 4rem;
+        justify-content: center;
+    }
+}
+
 @media (max-width:870px){
     #name, #email, #message{
         width: 50vw;
+    }
+}
+
+@media (max-width:648px){
+    .worktogether{
+        font-size: 3rem;;
     }
 }
 
@@ -186,6 +328,18 @@ button:hover{
 .nav{
     display: block;
     text-align: center;
+}
+
+.worktogether{
+    font-size: 2rem;
+    width:50vw;
+    justify-items: center;
+}
+
+.contact{
+    width: 50vw;
+    justify-items: center;
+    font-size: 1rem;
 }
 
 .intro img{
@@ -198,5 +352,17 @@ button:hover{
     header h1{
         font-size: 2rem;
     }
+
+    .worktogether{
+        width: 40vw;
+        font-size: 1.5rem;
+        bottom: 4rem;
+    }
+
+    .contact{
+        width: 45vw;
+        font-size: 0.5rem;
+    }
 }
+
 

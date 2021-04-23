@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<title>Contact Me</title>
+<meta name="viewport" content="width=device-width, initial scale 1.0">
+<head>
+            <meta charset="UTF-8">
+            <script src="https://kit.fontawesome.com/6fd8975af2.js" crossorigin="anonymous"></script>
+            <link rel="Home Page" href="/index.html">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pinyon+Script&family=Syncopate&display=swap" rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Syncopate&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="style.css">
+</head>
+<html>
+    <body>
+<header>
+    <br><br><br><br><br><br><br>
+<h4>Contact Me!</h4>
+<br><br>
+<div class="guitars">
+<img class = "col1" src="/Assets/mayo.jpg" alt="Elliot playing live">
+<img class = "col2" src="/Assets/avatars-000078206641-i5958t-t500x500.jpeg" alt="Elliot in black and white">
+<img class= "col3" src="/Assets/butserfest.jpeg" alt="butserfest2015">
+<img class="col4" src="/Assets/stage dive.jpeg " alt="deadbolt fest">
+<img class="col5" src="/Assets/suns out.jpeg " alt="alex stewart">
+</div>
+<br> <br> <br>
+</header>
+<nav class="nav-2">
+    <a href="index.html" class="fas fa-home">Home</a>
+    <p>|</p>
+    <a href="https://github.com/ellriffs" target="_blank" class="fa fa-github"> Github </a>
+    <p>|</p>
+    <a href="https://codepen.io/ellriffs" target="_blank" class="fa fa-codepen"> Codepen </a>
+    <p>|</p>
+    <a href="https://www.linkedin.com/in/elliot-robertson-b3940762/" target="_blank" class="fa fa-linkedin"> Linkedin</a>
+    
+</nav>
+        <form>
+            
+            <input type="text" id="name" placeholder="Name">
+            <br>
+            <input type="text" id="email" placeholder="Email">
+            <br>
+            <input type="text" id="message" placeholder="Your Message">
+            
+        <div class="btn">
+            <button type="button" id="submit">Submit</button>
+            <button type="button" id="clear">Clear</button>
+        </div>
+    </form>
+    </footer>
+
+    <script>
+        document.getElementById("submit").addEventListener("click", function(){
+            var name = document.getElementById('name');
+            var email = document.getElementById('email');
+            var message = document.getElementById('message');
+            alert(name.value + "\n" + email.value + "\n" + message.value);}
+        );
+
+        document.getElementById("clear").addEventListener("click", function(){
+            document.getElementById('name').value="";
+            document.getElementById("email").value="";
+            document.getElementById('message').value=""});
+        </script>
+        </html>
+    </body>
